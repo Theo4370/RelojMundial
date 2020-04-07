@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-
+android:background="#99000000"
     tools:context=".TerceraActivity">
 
     <TextView
@@ -13,7 +13,7 @@
         android:layout_height="100dp"
         android:background="#000"
         android:gravity="center"
-        android:text="Seleccione la hora actual"
+        android:text="La hora actual en los siguientes paises es:"
         android:textColor="#FFFFFF"
         android:textSize="30dp" />
 
