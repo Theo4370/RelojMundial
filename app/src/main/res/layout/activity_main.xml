@@ -19,7 +19,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="430dp"
         android:background="@drawable/imagenpaises"
         android:orientation="vertical">
 
@@ -29,15 +29,15 @@
             android:layout_height="430dp"
             android:scaleType="centerCrop"
             android:src="@drawable/agujas" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="Ingresar"
-            android:id="@+id/botonIngresar"/>
-
-
     </LinearLayout>
+
+    <Button
+        android:id="@+id/botonIngresar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Ingresar" />
+
+
 </LinearLayout>

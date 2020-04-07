@@ -96,7 +96,6 @@ public class SegundaActivity extends AppCompatActivity {
             }
         });
 
-
         AMPM.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
