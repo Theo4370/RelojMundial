@@ -10,20 +10,22 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="0dp"
         android:background="#000"
         android:gravity="center"
         android:text="Seleccione la hora actual"
         android:textColor="#FFFFFF"
-        android:textSize="30dp" />
+        android:textSize="30dp"
+        android:layout_weight="0.2"/>
 
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="440dp"
+        android:layout_height="0dp"
         android:layout_gravity="center"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_weight="0.7">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -116,8 +118,9 @@
     <Button
         android:id="@+id/botonAceptarHorario"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_gravity="center"
-        android:text="Aceptar" />
+        android:text="Aceptar"
+        android:layout_weight="0.1"/>
 
 </LinearLayout>

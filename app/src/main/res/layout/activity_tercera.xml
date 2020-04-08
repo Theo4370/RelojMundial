@@ -4,24 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#99000000"
     android:orientation="vertical"
-android:background="#99000000"
     tools:context=".TerceraActivity">
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="0dp"
         android:background="#000"
         android:gravity="center"
         android:text="La hora actual en los siguientes paises es:"
         android:textColor="#FFFFFF"
-        android:textSize="30dp" />
+        android:textSize="30dp"
+        android:layout_weight="0.15"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
         android:orientation="horizontal"
-        android:gravity="center">
+        android:layout_weight="0.25">
 
         <ImageView
             android:layout_width="160dp"
@@ -29,40 +31,41 @@ android:background="#99000000"
             android:src="@drawable/francia" />
 
         <TextView
+            android:id="@+id/terceraActivity_horaFrancia"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="end"
             android:text="00:"
-            android:textSize="30dp"
-            android:id="@+id/terceraActivity_horaFrancia"/>
+            android:textSize="30dp" />
 
         <TextView
+            android:id="@+id/terceraActivity_minutoFrancia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="end"
             android:text="00"
-            android:textSize="30dp"
-            android:id="@+id/terceraActivity_minutoFrancia"/>
+            android:textSize="30dp" />
 
 
         <TextView
+            android:id="@+id/terceraActivity_AMFMFrancia"
             android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
             android:text="AM"
-            android:textSize="30dp"
-            android:id="@+id/terceraActivity_AMFMFrancia"/>
+            android:textSize="30dp" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
         android:orientation="horizontal"
-        android:gravity="center">
+        android:layout_weight="0.25">
 
         <ImageView
             android:layout_width="160dp"
@@ -70,39 +73,41 @@ android:background="#99000000"
             android:src="@drawable/china" />
 
         <TextView
+            android:id="@+id/terceraActivity_horaChina"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="end"
             android:text="00:"
-            android:textSize="30dp"
-            android:id="@+id/terceraActivity_horaChina"/>
+            android:textSize="30dp" />
 
         <TextView
+            android:id="@+id/terceraActivity_minutoChina"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="end"
             android:text="00"
-            android:textSize="30dp"
-            android:id="@+id/terceraActivity_minutoChina"/>
+            android:textSize="30dp" />
 
         <TextView
+            android:id="@+id/terceraActivity_AMFMChina"
             android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
             android:text="AM"
-            android:textSize="30dp"
-            android:id="@+id/terceraActivity_AMFMChina"/>
+            android:textSize="30dp" />
 
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_weight="0.25">
 
         <ImageView
             android:layout_width="160dp"
@@ -110,31 +115,31 @@ android:background="#99000000"
             android:src="@drawable/sudafrica" />
 
         <TextView
+            android:id="@+id/terceraActivity_horaSudafrica"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="end"
             android:text="00:"
-            android:textSize="30dp"
-            android:id="@+id/terceraActivity_horaSudafrica"/>
+            android:textSize="30dp" />
 
         <TextView
+            android:id="@+id/terceraActivity_minutoSudafrica"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="end"
             android:text="00"
-            android:textSize="30dp"
-            android:id="@+id/terceraActivity_minutoSudafrica"/>
+            android:textSize="30dp" />
 
         <TextView
+            android:id="@+id/terceraActivity_AMFMCSudafrica"
             android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
             android:text="AM"
-            android:textSize="30dp"
-            android:id="@+id/terceraActivity_AMFMCSudafrica"/>
+            android:textSize="30dp" />
 
 
     </LinearLayout>
