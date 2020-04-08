@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="#B3000000"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#B3000000">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"      >
 
     <TextView
         android:layout_width="match_parent"
@@ -18,19 +23,29 @@
         android:textColor="#FFFFFF"
         android:textSize="35dp" />
 
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="430dp"
-        android:background="@drawable/imagenpaises"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        >
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/imagenpaises"
+            android:scaleType="centerCrop"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#B3000000"/>
 
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="430dp"
+            android:layout_height="match_parent"
             android:scaleType="centerCrop"
             android:src="@drawable/agujas" />
-    </LinearLayout>
+    </FrameLayout>
 
     <Button
         android:id="@+id/botonIngresar"
@@ -40,5 +55,7 @@
         android:gravity="center"
         android:text="Ingresar" />
 
+  </LinearLayout>
 
-</LinearLayout>
+
+</FrameLayout>

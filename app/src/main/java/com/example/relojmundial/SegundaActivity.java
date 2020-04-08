@@ -117,7 +117,7 @@ public class SegundaActivity extends AppCompatActivity {
                 Bundle horarioAPasar = new Bundle();
                 horarioAPasar.putString("horaIngresada", hora.getText().toString());
                 horarioAPasar.putString("minutoIngresado", minuto.getText().toString());
-                horarioAPasar.putString("AMFM", AMPM.getText().toString());
+                horarioAPasar.putString("AMPM", AMPM.getText().toString());
 
                 pasarATerceraActividad.putExtras(horarioAPasar);
                 startActivity(pasarATerceraActividad);
